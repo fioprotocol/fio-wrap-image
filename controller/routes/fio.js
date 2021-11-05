@@ -3,5 +3,5 @@ import { checkAPIKey } from "./middle";
 
 const route = require("express").Router();
 
-route.get("/nftimage", checkAPIKey , (req, res) => fioCtrl.getImageUrlWithDomain(req,res));
+route.get("/domainnft/:domain", checkAPIKey , (req, res) => fioCtrl.getImageUrlWithDomain(req,res));
 export default route;

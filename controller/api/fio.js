@@ -6,15 +6,18 @@ class FIOCtrl {
     constructor() {}
     
     async getImageUrlWithDomain(req,res) {
-        let domain = req.query.domain;
-        try {
-            let tempRes = await this.generateImage(domain);
-            console.log(tempRes);
-            res.send(tempRes);
-          } catch (error) {
-            console.log(error);
-            res.send({})
-          }
+      let domain = req.params.domain;
+      let realdomain = domain;
+      if (domain.indexOf(".svg") > 1) {
+        let index = domain.indexOf(".svg");
+        realdomain = domain.substring(0,  index);
+      }
+      try {
+          let tempRes = await this.generateImage(realdomain);
+          res.send(tempRes);
+        } catch (error) {
+          res.send({})
+        }
     }
     async returnSVG() {
       const path = "fio.svg";
@@ -34,7 +37,6 @@ class FIOCtrl {
       return output;
     }
     async drawDomain(type, fioString, drawString) {
-      console.log("type: ", type);
       if (type == 1 || type == 3) {
         let str = '250"></polygon>';
         let index = fioString.indexOf(str)+str.length;
