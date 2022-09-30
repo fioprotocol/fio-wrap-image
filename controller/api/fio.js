@@ -25,7 +25,7 @@ class FIOCtrl {
       return data.toString();
     }
     async generateImage(domain) {
-      let realDomain = "."+domain
+      let realDomain = "@"+domain
       let domainLength = realDomain.length;
       let type = 0;
       if (domainLength < 22) type = 1;
