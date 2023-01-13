@@ -1,7 +1,7 @@
 const { readFileSync } = require('fs')
-let draw1 = '<rect id="Rectangle" fill="#083F67" opacity="0.35" x="15" y="160" width="220" height="37" rx="7"></rect><text id=".d" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="ProximaNova-Medium, Proxima Nova" font-size="15" font-weight="400" line-spacing="19" fill="#FFFFFF"><tspan x="118" y="183"></tspan></text>';
-let draw2 = '<rect id="Rectangle" fill="#083F67" opacity="0.35" x="15" y="160" width="220" height="54" rx="7"></rect><text id=".domainnamedomainnam"  font-family="ProximaNova-Medium, Proxima Nova" font-size="15" font-weight="400" line-spacing="19" fill="#FFFFFF"><tspan x="31" y="182"></tspan><tspan x="31" y="201"></tspan></text>';
-let draw3 = '<rect id="Rectangle" fill="#083F67" opacity="0.35" x="15" y="160" width="220" height="75" rx="7"></rect><text id=".domainnamedomainnam" font-family="ProximaNova-Medium, Proxima Nova" font-size="15" font-weight="400" line-spacing="19" fill="#FFFFFF"><tspan x="32" y="183"></tspan><tspan x="32" y="202"></tspan><tspan x="32" y="221"></tspan></text>';
+let draw1 = '<rect id="Rectangle" fill="#FFFFFF" opacity="0.05" x="15" y="160" width="220" height="37" rx="7"></rect><text id=".d" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="ProximaNova-Medium, Proxima Nova" font-size="15" font-weight="400" line-spacing="19" fill="#FFFFFF"><tspan x="118" y="183"></tspan></text>';
+let draw2 = '<rect id="Rectangle" fill="#FFFFFF" opacity="0.05" x="15" y="160" width="220" height="54" rx="7"></rect><text id=".domainnamedomainnam"  font-family="ProximaNova-Medium, Proxima Nova" font-size="15" font-weight="400" line-spacing="19" fill="#FFFFFF"><tspan x="31" y="182"></tspan><tspan x="31" y="201"></tspan></text>';
+let draw3 = '<rect id="Rectangle" fill="#FFFFFF" opacity="0.05" x="15" y="160" width="220" height="75" rx="7"></rect><text id=".domainnamedomainnam" font-family="ProximaNova-Medium, Proxima Nova" font-size="15" font-weight="400" line-spacing="19" fill="#FFFFFF"><tspan x="32" y="183"></tspan><tspan x="32" y="202"></tspan><tspan x="32" y="221"></tspan></text>';
 class FIOCtrl {
     constructor() {}
     
