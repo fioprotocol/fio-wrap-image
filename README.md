@@ -10,3 +10,27 @@ https://metadata.fioprotocol.io/nftimage/sampledomain.svg
 ```
 
 It returns a dynamically generated .svg image with the FIO logo and the name of the wrapped FIO Domain.
+
+## Installation
+
+Requires nodejs.
+
+```
+git clone https://github.com/fioprotocol/fio-wrap-image
+cd fio-wrap-image
+npm install
+```
+
+## Testing
+
+To run locally, first start the service. It will run on port 3010:
+
+```
+npm run dev
+```
+
+Next, call the local service with an example domain:
+
+```
+http://localhost:3010/nftimage/sampledomain.svg
+```
